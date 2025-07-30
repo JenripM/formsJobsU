@@ -120,7 +120,7 @@ export default function FormAddPractica() {
 
   return (
     <main className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md mt-6">
-      <h1 className="text-2xl font-bold mb-6 text-center">Agregar Práctica</h1>
+      <h1 className="text-2xl font-bold mb-6 text-center">Agregar Práctica para Analistas</h1>
 
       <form onSubmit={handleSubmit} className="space-y-5">
         {/* Campo de Título */}
