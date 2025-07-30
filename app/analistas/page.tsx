@@ -175,6 +175,11 @@ export default function FormAddPractica() {
             <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/Makita.png">Makita</option>
             <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/Ajinomoto.png">Ajinomoto</option>
             <option value="https://yt3.googleusercontent.com/YiYGf83GoGGvZNyOPkWaYbx72NZgrNOXJula93d0jnznWyosF72pO7Psvv1IIa7iKJHWa6wl3A=s900-c-k-c0x00ffffff-no-rj">BCP</option>
+            <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/Aceros%20chilca.jpg">Aceros Chilca</option>
+            <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/DHL.png">DHL</option>
+            <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/La%20Positiva.png">La Positiva</option>
+
+          
             {/* Agrega más opciones según sea necesario */}
           </select>
         </label>
