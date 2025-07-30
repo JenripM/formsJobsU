@@ -171,8 +171,9 @@ export default function FormAddPractica() {
           >
             <option value="">Selecciona un logo</option>
             <option value="otros">Otros</option>
-            <option value="url1">Logo 1 (puedes colocar URLs aquí)</option>
-            <option value="url2">Logo 2</option>
+            <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/Rimac%20Seguros.png">Rimac</option>
+            <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/Makita.png">Makita</option>
+            <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/Ajinomoto.png">Ajinomoto</option>
             {/* Agrega más opciones según sea necesario */}
           </select>
         </label>
