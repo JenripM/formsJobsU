@@ -112,9 +112,10 @@ export default function FormAddPractica() {
       setIsOtherLogo(false);
       setUploadedLogoUrl("");
 
-      window.location.reload(); // Recargar la página si es necesario
+        window.location.href = window.location.href;
     } catch (err) {
- 
+    window.location.href = window.location.href;
+
     }
   };
 
