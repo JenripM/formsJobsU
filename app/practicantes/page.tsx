@@ -180,7 +180,9 @@ export default function FormAddPractica() {
             <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/Culqi.png">Culqui</option>
             <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/Agrobanco.png">AgroBanco</option>
             <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/Claro.jpg">Claro</option>
-
+            <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/Chubb.png">Chubb</option>
+            <option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/Nestle.png">Nestle</option>
+<option value="https://lkgncdyfimsdbtymiroe.supabase.co/storage/v1/object/public/empresas/logos/NTT.png">NNTDATA</option>
             {/* Agrega más opciones según sea necesario */}
           </select>
         </label>
