@@ -120,7 +120,7 @@ export default function FormAddPractica() {
 
   return (
     <main className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md mt-6">
-      <h1 className="text-2xl font-bold mb-6 text-center">Agregar Práctica para Analistas</h1>
+      <h1 className="text-2xl font-bold mb-6 text-center">Agregar Trabajo para Analistas</h1>
 
       <form onSubmit={handleSubmit} className="space-y-5">
         {/* Campo de Título */}
@@ -132,7 +132,7 @@ export default function FormAddPractica() {
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="Introduce el título de la práctica"
+            placeholder="Introduce el título del trabajo"
             disabled={loading || uploading}
             required
             className="w-full border border-gray-300 rounded-md p-2"
@@ -264,7 +264,7 @@ export default function FormAddPractica() {
           <textarea
             value={descripcion}
             onChange={(e) => setDescripcion(e.target.value)}
-            placeholder="Escribe una breve descripción de la práctica"
+            placeholder="Escribe una breve descripción del trabajo"
             disabled={loading || uploading}
             required
             rows={4}
@@ -281,7 +281,7 @@ export default function FormAddPractica() {
             type="text"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
-            placeholder="Introduce la ubicación de la práctica"
+            placeholder="Introduce la ubicación de trabajo"
             disabled={loading || uploading}
             required
             className="w-full border border-gray-300 rounded-md p-2"
@@ -297,7 +297,7 @@ export default function FormAddPractica() {
             type="text"
             value={salary}
             onChange={(e) => setSalary(e.target.value)}
-            placeholder="Introduce el salario de la práctica"
+            placeholder="Introduce el salario de trabajo"
             disabled={loading || uploading}
             required
             className="w-full border border-gray-300 rounded-md p-2"
