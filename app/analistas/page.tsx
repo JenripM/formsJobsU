@@ -21,6 +21,7 @@ export default function FormAddPractica() {
   const [salary, setSalary] = useState("");
   const [url, setUrl] = useState("");
   const [sitioWeb, setSitioWeb] = useState(""); // Nuevo estado para el sitio web
+  const [tituloContactos, setTituloContactos] = useState(""); // Nuevo estado para el título de contactos
   const [isOtherLogo, setIsOtherLogo] = useState(false); // Para saber si se seleccionó "Otros" en el logo
   const [uploading, setUploading] = useState(false);
   const [uploadedLogoUrl, setUploadedLogoUrl] = useState<string>("");
@@ -71,7 +72,8 @@ export default function FormAddPractica() {
       !location.trim() ||
       !salary.trim() ||
       !url.trim() ||
-      !sitioWeb.trim() // Validar el nuevo campo
+      !sitioWeb.trim() ||
+      !tituloContactos.trim() // Validar el nuevo campo
     ) {
       alert("Por favor completa todos los campos.");
       return;
@@ -86,6 +88,7 @@ export default function FormAddPractica() {
       salary,
       url,
       sitio_web: sitioWeb, // Agregar el nuevo campo sitio_web
+      titulo_contactos: tituloContactos, // Agregar el nuevo campo titulo_contactos
       fecha_agregado: new Date(),
     };
 
@@ -113,6 +116,7 @@ export default function FormAddPractica() {
       setSalary("");
       setUrl("");
       setSitioWeb(""); // Limpiar el nuevo campo
+      setTituloContactos(""); // Limpiar el campo de título de contactos
       setIsOtherLogo(false);
       setUploadedLogoUrl("");
 
@@ -169,6 +173,22 @@ export default function FormAddPractica() {
             value={sitioWeb}
             onChange={(e) => setSitioWeb(e.target.value)}
             placeholder="Introduce la URL del sitio web"
+            disabled={loading || uploading}
+            required
+            className="w-full border border-gray-300 rounded-md p-2"
+          />
+        </label>
+
+        {/* Campo de Título de Contactos */}
+        <label className="block">
+          <span className="text-gray-700 font-semibold mb-1 block">
+            Título Contactos *
+          </span>
+          <input
+            type="text"
+            value={tituloContactos}
+            onChange={(e) => setTituloContactos(e.target.value)}
+            placeholder="Introduce el título de contactos"
             disabled={loading || uploading}
             required
             className="w-full border border-gray-300 rounded-md p-2"
